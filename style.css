@@ -1,0 +1,16 @@
+body {
+    background-color: lightpink;
+}
+
+.bg-hero-image {
+    background-image: url("imgs/louis\ vuitton.jpg");
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 400px;
+}
+
+.container {
+    display: flex; /* Use flexbox to align items */
+    justify-content: space-between; /* Add space between the images */
+}
