@@ -10,7 +10,16 @@ body {
         height: 400px;
 }
 
-.container {
-    display: flex; /* Use flexbox to align items */
-    justify-content: space-between; /* Add space between the images */
+.container-fluid {
+    display: flex;
+    justify-content: space-between;
 }
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: black;
+    font-size: xx-large;
+  }
