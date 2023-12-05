@@ -196,3 +196,7 @@ a.nav-link {
   font-family: Nova Square;
   font-weight: bolder;
 }
+
+h1.mb-3 {
+  font-family: quicksand;
+}
