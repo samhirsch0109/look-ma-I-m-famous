@@ -2,6 +2,9 @@ body {
   background-color: lightpink;
 }
 
+h1 {
+  font-family:'Segoe UI';
+}
 .bg-hero-image {
   background-image: url("imgs/louis\ vuitton.jpg");
   background-position: center center;
@@ -119,7 +122,6 @@ h1 {
   background-repeat: no-repeat;
   background-size: cover;
   height: 400px;
-  margin-bottom: 30px;
 }
 
 .bg-hero-image-accomplishments {
@@ -136,5 +138,60 @@ h1 {
   background-repeat: no-repeat;
   background-size: cover;
   height: 400px;
-  margin-top: 20px;
+}
+
+.hover-nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.hover-nav li {
+  float: left;
+}
+
+.hover-nav li a {
+  position: relative;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 8px 12px;
+  text-decoration: none;
+  z-index: 0;
+}
+
+li a::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  bottom: 0;
+  left: 0;
+  background-color: plum;
+  z-index: -1;
+  transform: scale(0);
+  transition: transform 0.5s ease-in-out;
+}
+
+li a:hover::before,
+li a:focus::before {
+  transform: scale(1);
+}
+
+p.font {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1 {
+  font-family: Rubik Bubbles;
+}
+
+h3 {
+  font-family: Rubik Bubbles;
+}
+
+a.nav-link {
+  font-family: Nova Square;
+  font-weight: bolder;
 }
